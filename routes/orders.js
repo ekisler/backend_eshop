@@ -7,7 +7,7 @@ const router = require("express").Router();
 
 // ORDERS
 
-router.get("/", isAdmin, async(req, res) => {
+router.post("/", isAdmin, async(req, res) => {
   const query = req.query.new;
 
   try {
